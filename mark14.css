@@ -7,6 +7,7 @@ body{
     font-size: larger;
     margin: 2rem 0px;
     font-weight: 600;
+    color: rgb(49, 49, 122);
 }
 .price{
     font-size: large;
@@ -14,21 +15,21 @@ body{
     outline: #fff;
     padding: 0.6rem 1rem;
     margin: 1rem auto;
-    border: 2px solid purple;
+    border: 2px solid rgb(49, 49, 122);
     border-radius: 0.5rem;
     width: 100%;
     max-width: 325px;
     
 }
 #submit-btn{
-    background:purple;
+    background:rgb(49, 49, 122);
     border: none;
-    color: #fff;
+    color:white;
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
     font-size: large;
     cursor: pointer;
-    outline: #fff;
+    /* outline: #fff; */
     margin: auto;
     display: block;
 }
@@ -37,4 +38,11 @@ body{
     margin-top: 1%;
     font-weight: bold;
     
+}
+.background{
+    background-image: url('lg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 10;    
+
 }
