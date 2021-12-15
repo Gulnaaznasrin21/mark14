@@ -14,20 +14,25 @@ function submitHandler() {
 }
 
 function calculateprofitAndLoss(initial, quantity, current) {
-    if (initial > current) {
-        var loss = (initial - current) * quantity;
-        var lossPercentage = (loss / initial) * 100;
-        showOutput('hey the loss is' + loss + 'And the percentage of loss is' + lossPercentage + "%" + "😒");
-        outputBox.style.color = 'red';
+    if(initial>0 && current>0){
+        if (initial > current) {
+            var loss = (initial - current) * quantity;
+            var lossPercentage = (loss / initial) * 100;
+            showOutput('hey the loss is' + loss + 'And the percentage of loss is' + lossPercentage + "%" + "😒");
+            outputBox.style.color = 'red';
 
-    } else if (current > initial) {
-        var profit = (current - initial) * quantity;
-        var profitPercentage = (profit / initial) * 100;
-        showOutput('hey the profit is' + profit + 'And the percentage of profit is' + profitPercentage + "%" + "😎");
-        outputBox.style.color = 'green';
+        } else if (current > initial) {
+            var profit = (current - initial) * quantity;
+            var profitPercentage = (profit / initial) * 100;
+            showOutput('hey the profit is' + profit + 'And the percentage of profit is' + profitPercentage + "%" + "😎");
+            outputBox.style.color = 'green';
 
-    } else {
-        showOutput("No pain no gain and no gain no pain");
+        } else {
+            showOutput("No pain no gain and no gain no pain");
+        }
+    }else{
+        showOutput("You entered negtive numbers Please enter vaild Number")
+
     }
 }
 
